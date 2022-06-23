@@ -73,8 +73,8 @@ Let's take a look at the GitLab version control server issues that were added, e
 
 ### *Change control*
 
-See [CHANGELOG.md](https://github.com/CHANGELOG.md)
+See [CHANGELOG.md](https://github.com/mygnet/anemona-task/blob/main/CHANGELOG.md)
 
 ### *License*
 
-See [LICENSE](https://github.com/LICENCE)
+See [LICENSE](https://github.com/mygnet/anemona-task/blob/main/LICENCE)

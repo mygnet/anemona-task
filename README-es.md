@@ -73,8 +73,8 @@ Demos un vistazo de las incidencias en el servidor de control de versiones GitLa
 
 ### *Control de cambios*
 
-See [CHANGELOG.md](https://github.com/CHANGELOG.md)
+See [CHANGELOG.md](https://github.com/mygnet/anemona-task/blob/main/CHANGELOG.md)
 
 ### *License*
 
-See [LICENSE](https://github.com/LICENCE)
+See [LICENSE](https://github.com/mygnet/anemona-task/blob/main/LICENCE)
