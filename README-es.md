@@ -1,5 +1,11 @@
 # **Anemona Task GitLab**
+
+[![Registro de cambios](https://img.shields.io/badge/Registro%20de%20cambios-0.0.1-orange)](https://github.com/mygnet/anemona-task/blob/main/CHANGELOG-es.md)
+[![Licencia](https://img.shields.io/badge/Licencia-MIT-blue)](https://github.com/mygnet/anemona-task/blob/main/LICENSE)
+[![Leer en ingles](https://img.shields.io/badge/Leer%20en-Ingles-green)](README.md)
+
 Extensión de VS Code que gestiona las incidencias de GitLab con apariencia de tareas asignadas, delegadas y estadística de avances en la barra lateral flotante o panel de vsc.
+
 
 ![Incidencias](/assets/github/screenshot.gif)
 
@@ -70,11 +76,3 @@ Si tienes el rol de administrador podrás realizas estas acciones, y como altern
 ###   **incidencias de GitLab**
 Demos un vistazo de las incidencias en el servidor de control de versiones GitLab que fueron agregadas, editas desde la extension vsc.
 ![Incidencias](/assets/github/issues.jpg)
-
-### *Control de cambios*
-
-See [CHANGELOG.md](https://github.com/mygnet/anemona-task/blob/main/CHANGELOG.md)
-
-### *License*
-
-See [LICENSE](https://github.com/mygnet/anemona-task/blob/main/LICENCE)

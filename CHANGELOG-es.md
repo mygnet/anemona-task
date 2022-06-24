@@ -18,5 +18,3 @@
 - Posibilidad de habiltar un api services para realizar acciones de administrador
 - (Admin) Cambiar imagen del avatar
 - (Admin) Eliminar una tarea
-
-**
