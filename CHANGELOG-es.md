@@ -18,3 +18,8 @@
 - Posibilidad de habiltar un api services para realizar acciones de administrador
 - (Admin) Cambiar imagen del avatar
 - (Admin) Eliminar una tarea
+
+## [0.0.2] - 2022-07-02
+
+- Reportar el procentaje de avance general en el dashboard
+- Mejoras y optimisaciones en general

@@ -1,9 +1,17 @@
 {
   "name": "vscode-anemona-task",
-  "displayName": "Anemona Task Management",
-  "description": "VSCode Extension Sidebar Panel with Task Management.",
-  "version": "0.0.1",
+  "displayName": "Anemona Task GitLab",
+  "description": "VSCode Extension Sidebar Panel with Task(issues) GitLab.",
+  "version": "0.0.2",
   "icon": "logo.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mygnet/anemona-task"
+  },
+  "publisher": "mygnet",
+  "author": {
+    "name": "Martin R. Mondragón"
+  },
   "engines": {
     "vscode": "^1.54.0"
   },
@@ -11,7 +19,14 @@
     "Visualization",
     "Other"
   ],
+  "keywords": [
+    "gitlab",
+    "anemona",
+    "task",
+    "issues"
+  ],
   "activationEvents": [
+    "onStartupFinished",
     "onView:vscode-anemona-task-sidebar",
     "onCommand:vscode-anemona-task.home-en",
     "onCommand:vscode-anemona-task.home-es",
@@ -148,54 +163,54 @@
       "view/title": [
         {
           "command": "vscode-anemona-task.lang-en",
-          "when": "vscode-anemona-task.idMenuOption == 1 || vscode-anemona-task.idMenuOption == 2",
+          "when": "view == vscode-anemona-task-sidebar && vscode-anemona-task.idMenuOption == 1 || view == vscode-anemona-task-sidebar && vscode-anemona-task.idMenuOption == 2",
           "group": "a@2"
         },
         {
           "command": "vscode-anemona-task.lang-es",
-          "when": "vscode-anemona-task.idMenuOption == 3 || vscode-anemona-task.idMenuOption == 4",
+          "when": "view == vscode-anemona-task-sidebar && vscode-anemona-task.idMenuOption == 3 || view == vscode-anemona-task-sidebar && vscode-anemona-task.idMenuOption == 4",
           "group": "a@2"
         },
         {
           "command": "vscode-anemona-task.refresh-en",
-          "when": "vscode-anemona-task.idMenuOption == 1 || vscode-anemona-task.idMenuOption == 2",
+          "when": "view == vscode-anemona-task-sidebar && vscode-anemona-task.idMenuOption == 1 || view == vscode-anemona-task-sidebar && vscode-anemona-task.idMenuOption == 2",
           "group": "navigation@3"
         },
         {
           "command": "vscode-anemona-task.refresh-es",
-          "when": "vscode-anemona-task.idMenuOption == 3 || vscode-anemona-task.idMenuOption == 4",
+          "when": "view == vscode-anemona-task-sidebar && vscode-anemona-task.idMenuOption == 3 || view == vscode-anemona-task-sidebar && vscode-anemona-task.idMenuOption == 4",
           "group": "navigation@3"
         },
         {
           "command": "vscode-anemona-task.tasks-en",
-          "when": "vscode-anemona-task.idMenuOption == 2",
+          "when": "view == vscode-anemona-task-sidebar && vscode-anemona-task.idMenuOption == 2",
           "group": "navigation@1"
         },
         {
           "command": "vscode-anemona-task.home-en",
           "title":"",
-          "when": "vscode-anemona-task.idMenuOption == 2",
+          "when": "view == vscode-anemona-task-sidebar && vscode-anemona-task.idMenuOption == 2",
           "group": "navigation@2"
         },
         {
           "command": "vscode-anemona-task.logout-en",
-          "when": "vscode-anemona-task.idMenuOption == 2",
+          "when": "view == vscode-anemona-task-sidebar && vscode-anemona-task.idMenuOption == 2",
           "group": "c@2"
         },
         {
           "command": "vscode-anemona-task.tasks-es",
-          "when": "vscode-anemona-task.idMenuOption == 4",
+          "when": "view == vscode-anemona-task-sidebar && vscode-anemona-task.idMenuOption == 4",
           "group": "navigation@1"
         },
         {
           "command": "vscode-anemona-task.home-es",
           "title":"",
-          "when": "vscode-anemona-task.idMenuOption == 4",
+          "when": "view == vscode-anemona-task-sidebar && vscode-anemona-task.idMenuOption == 4",
           "group": "navigation@2"
         },
         {
           "command": "vscode-anemona-task.logout-es",
-          "when": "vscode-anemona-task.idMenuOption == 4",
+          "when": "view == vscode-anemona-task-sidebar && vscode-anemona-task.idMenuOption == 4",
           "group": "c@2"
         }
       ]

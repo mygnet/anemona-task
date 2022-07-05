@@ -1,6 +1,6 @@
 # Change Log
 
-## [0.0.1] - 2022-06-24
+## [0.0.1] - 2022-06-04
 
 - Task management (issues) for GitLab
 - Connects to private and public HTTP and HTTPS servers.
@@ -18,3 +18,9 @@
 - Possibility of enabling an api services to perform administrator actions
 - (Admin) Change avatar image
 - (Admin) Delete a task
+
+
+## [0.0.2] - 2022-07-04
+
+- Report the percentage of general progress in the dashboard
+- Improvements and optimizations in general
