@@ -9,7 +9,7 @@
 - List of Tasks (incidents) indicated and delegated
 - Task filters by priority and status
 - Record task progress
-- Close or Open task (incidents)
+- Close or Open task (issues)
 - Add more task and assign them to project users
 - Edit tasks (issues)
 - Rank the importance of tasks
@@ -19,8 +19,18 @@
 - (Admin) Change avatar image
 - (Admin) Delete a task
 
-
 ## [0.0.2] - 2022-07-04
 
 - Report the percentage of general progress in the dashboard
+- Improvements and optimizations in general
+
+## [0.0.3] - 2022-07-11
+
+- The problem of the Reload that hid the extension is corrected
+- Fix persistent progress scrolling on logout
+- Added view in a task tab (issue)
+- Added options to make comments on tasks (issues)
+- The system incident notes (logs) are incorporated
+- Important closing and update dates are added according to the status of the task (issue))
+- Error handler is made for unexpected events
 - Improvements and optimizations in general
