@@ -22,7 +22,7 @@
 ## [0.0.2] - 2022-07-02
 
 - Reportar el procentaje de avance general en el dashboard
-- Mejoras y optimisaciones en general
+- Mejoras y optimizaciones en general
 
 ## [0.0.3] - 2022-07-11
 
@@ -33,10 +33,10 @@
 - Se incorpora las notas de incidencias del sistema (logs)
 - Se agregan las fechas importantes de cierre y actulixacione segun el estado de la tarea(incidencia))
 - Se realiza manejador de errores para los sucessos inesperados
-- Mejoras y optimisaciones en general
+- Mejoras y optimizaciones en general
 
 ## [0.0.4] - 2022-07-14
 
 - Sesión persistente de usuario de manera global
 - Las actividades y seleccion del proyectos se mantiene persistes por espacios de trabajo
-- Mejoras y optimisaciones en general
+- Mejoras y optimizaciones en general
