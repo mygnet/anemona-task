@@ -34,3 +34,9 @@
 - Important closing and update dates are added according to the status of the task (issue))
 - Error handler is made for unexpected events
 - Improvements and optimizations in general
+
+## [0.0.4] - 2022-07-14
+
+- Persistent user session globally
+- The activities and selection of the projects are maintained by workspaces
+- Improvements and optimizations in general
