@@ -1,5 +1,5 @@
 # **Anemona Task GitLab**
-[![Changelog](https://img.shields.io/badge/CHANGELOG-0.0.4-orange)](https://github.com/mygnet/anemona-task/blob/main/CHANGELOG.md)
+[![Changelog](https://img.shields.io/badge/CHANGELOG-0.0.5-orange)](https://github.com/mygnet/anemona-task/blob/main/CHANGELOG.md)
 [![license](https://img.shields.io/badge/LICENSE-MIT-blue)](https://github.com/mygnet/anemona-task/blob/main/LICENSE)
 [![readme](https://img.shields.io/badge/README-Spanish-green)](README-es.md)
 

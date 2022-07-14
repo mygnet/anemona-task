@@ -40,3 +40,7 @@
 - Persistent user session globally
 - The activities and selection of the projects are maintained by workspaces
 - Improvements and optimizations in general
+
+## [0.0.5] - 2022-07-14
+
+- Fixed the error when opening the task (issue) in the tab

@@ -1,6 +1,6 @@
 # **Anemona Task GitLab**
 
-[![Registro de cambios](https://img.shields.io/badge/Registro%20de%20cambios-0.0.4-orange)](https://github.com/mygnet/anemona-task/blob/main/CHANGELOG-es.md)
+[![Registro de cambios](https://img.shields.io/badge/Registro%20de%20cambios-0.0.5-orange)](https://github.com/mygnet/anemona-task/blob/main/CHANGELOG-es.md)
 [![Licencia](https://img.shields.io/badge/Licencia-MIT-blue)](https://github.com/mygnet/anemona-task/blob/main/LICENSE)
 [![Leer en ingles](https://img.shields.io/badge/Leer%20en-Ingles-green)](README.md)
 

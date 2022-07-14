@@ -40,3 +40,7 @@
 - Sesión persistente de usuario de manera global
 - Las actividades y seleccion del proyectos se mantiene persistes por espacios de trabajo
 - Mejoras y optimizaciones en general
+
+## [0.0.5] - 2022-07-14
+
+- Corrección de error al abrir la tarea(incidencia) en la pestaña
