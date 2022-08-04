@@ -2,7 +2,7 @@
   "name": "vscode-anemona-task",
   "displayName": "Anemona Task GitLab",
   "description": "VSCode Extension Sidebar Panel with Task(issues) GitLab.",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "icon": "logo.png",
   "repository": {
     "type": "git",
@@ -38,6 +38,8 @@
     "onCommand:vscode-anemona-task.logout-es",
     "onCommand:vscode-anemona-task.tasks-en",
     "onCommand:vscode-anemona-task.tasks-es",
+    "onCommand:vscode-anemona-task.activity-en",
+    "onCommand:vscode-anemona-task.activity-es",
     "onWebviewPanel:vscode-anemona-task.web-task",
     "onWebviewPanel:vscode-anemona-task.comment"
     ],
@@ -48,7 +50,7 @@
         {
           "id": "vscode-anemona-task-sidebar",
           "title": "Anemona",
-          "icon": "assets/icon.svg"
+          "icon": "assets/icons/activitybar.svg"
         }
       ]
     },
@@ -58,8 +60,8 @@
           "type": "webview",
           "id": "vscode-anemona-task-sidebar",
           "name": "Team",
-          "icon": "assets/icon.svg",
-          "contextualTitle": "Team"
+          "icon": "assets/icons/activitybar.svg",
+          "contextualTitle": "Anemona Task GitLab"
         }
       ]
     },
@@ -69,8 +71,8 @@
         "category": "Anemona Task Management",
         "title": "Dashboard",
         "icon": {
-          "light": "./assets/icons/light/chart.svg",
-          "dark": "./assets/icons/dark/chart.svg"
+          "light": "./assets/icons/light/dash.svg",
+          "dark": "./assets/icons/dark/dash.svg"
         }
       },
       {
@@ -78,8 +80,8 @@
         "category": "Anemona Task Management",
         "title": "Inicio",
         "icon": {
-          "light": "./assets/icons/light/chart.svg",
-          "dark": "./assets/icons/dark/chart.svg"
+          "light": "./assets/icons/light/dash.svg",
+          "dark": "./assets/icons/dark/dash.svg"
         }
       },
       {
@@ -147,6 +149,24 @@
           "light": "./assets/icons/light/tasks.svg",
           "dark": "./assets/icons/dark/tasks.svg"
         }
+      },
+      {
+        "command": "vscode-anemona-task.activity-en",
+        "category": "Anemona Task Management",
+        "title": "Notices and Pending",
+        "icon": {
+          "light": "./assets/icons/light/activity.svg",
+          "dark": "./assets/icons/dark/activity.svg"
+        }
+      },
+      {
+        "command": "vscode-anemona-task.activity-es",
+        "category": "Anemona Task Management",
+        "title": "Avisos y Pendientes",
+        "icon": {
+          "light": "./assets/icons/light/activity.svg",
+          "dark": "./assets/icons/dark/activity.svg"
+        }
       }
     ],
     "keybindings": [
@@ -176,23 +196,29 @@
         {
           "command": "vscode-anemona-task.refresh-en",
           "when": "view == vscode-anemona-task-sidebar && vscode-anemona-task.idMenuOption == 1 || view == vscode-anemona-task-sidebar && vscode-anemona-task.idMenuOption == 2",
-          "group": "navigation@3"
+          "group": "navigation@4"
         },
         {
           "command": "vscode-anemona-task.refresh-es",
           "when": "view == vscode-anemona-task-sidebar && vscode-anemona-task.idMenuOption == 3 || view == vscode-anemona-task-sidebar && vscode-anemona-task.idMenuOption == 4",
-          "group": "navigation@3"
+          "group": "navigation@4"
         },
-        {
-          "command": "vscode-anemona-task.tasks-en",
-          "when": "view == vscode-anemona-task-sidebar && vscode-anemona-task.idMenuOption == 2",
-          "group": "navigation@1"
-        },
+        
         {
           "command": "vscode-anemona-task.home-en",
           "title":"",
           "when": "view == vscode-anemona-task-sidebar && vscode-anemona-task.idMenuOption == 2",
+          "group": "navigation@1"
+        },
+        {
+          "command": "vscode-anemona-task.tasks-en",
+          "when": "view == vscode-anemona-task-sidebar && vscode-anemona-task.idMenuOption == 2",
           "group": "navigation@2"
+        },
+        {
+          "command": "vscode-anemona-task.activity-en",
+          "when": "view == vscode-anemona-task-sidebar && vscode-anemona-task.idMenuOption == 2",
+          "group": "navigation@3"
         },
         {
           "command": "vscode-anemona-task.logout-en",
@@ -200,15 +226,20 @@
           "group": "c@2"
         },
         {
-          "command": "vscode-anemona-task.tasks-es",
+          "command": "vscode-anemona-task.home-es",
+          "title":"",
           "when": "view == vscode-anemona-task-sidebar && vscode-anemona-task.idMenuOption == 4",
           "group": "navigation@1"
         },
         {
-          "command": "vscode-anemona-task.home-es",
-          "title":"",
+          "command": "vscode-anemona-task.tasks-es",
           "when": "view == vscode-anemona-task-sidebar && vscode-anemona-task.idMenuOption == 4",
           "group": "navigation@2"
+        },
+        {
+          "command": "vscode-anemona-task.activity-es",
+          "when": "view == vscode-anemona-task-sidebar && vscode-anemona-task.idMenuOption == 4",
+          "group": "navigation@3  "
         },
         {
           "command": "vscode-anemona-task.logout-es",

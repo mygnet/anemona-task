@@ -7,6 +7,7 @@
     "connect":"Connect",
     "select-project":"Select a project",
     "pending":"Pending tasks",
+    "paused":"Paused tasks",
     "solved":"Solved tasks",
     "high-priority":"High priority",
     "medium-priority":"Medium priority",
@@ -57,5 +58,17 @@
     "alternatives":"Alternatives",
     "please-refresh":"Press the Reload icon that is on the top bar of the extension",
     "close-and-open":"Close and open tabs or views",
-    "sign-out-and-sign":"Sign out and sign in again"
+    "sign-out-and-sign":"Sign out and sign in again",
+    "start-date":"Start date",
+    "customize-start-date":"Customize start date",
+    "paused-tasks":"Paused tasks",
+    "pending-tasks":"Pending tasks",
+    "there-are-no-pending-activities":"There are no pending activities",
+    "pause-task":"Pause task",
+    "paused-task":"Paused task",
+    "activate-task":"Activate task",
+    "show-more":"Show more",
+    "show-less":"Show less",
+    "expired-delivery-date":"Expired delivery date",
+    "delivery-available-time-bar":"Delivery available time bar"
 }

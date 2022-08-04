@@ -1,5 +1,18 @@
 # Change Log
 
+## [0.0.7] - 2022-08-04
+
+- Added indicators of overdue tasks and tasks to the time limit.
+- A bar was added for each task that decreases when the end date approaches.
+- Added the option to define a start date, otherwise the incident creation date is taken.
+- The dashboard added the option to record the global progress that is recorded for each of the tasks (incidence)
+- Added option to pause/activate a task(issue)
+- Added a calendar view where projects with pending and paused tasks (incidents) are marked and listed.
+- In the comments section, the option to add attached images was enabled (to view them it is necessary to uncheck the option in the general configuration of the project in gitlab in versions 15.3.0 in Visibility, project features, permissions: the checkbox of "Require authentication to view media files").
+- In the View where the comments are shown, a list of logs was added that the gitlab registers the changes of the task (incidence).
+- Fixed the error that did not allow exiting the session when doing a logout and reopening the session.
+- Fixed the error that when adding a task (incident) or assigning it, it did not return to the list.
+
 ## [0.0.6] - 2022-07-20
 
 - Fixed error when installing version 0.0.5 for the first time without previous versions.
