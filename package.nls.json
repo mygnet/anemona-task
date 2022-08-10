@@ -1,0 +1,11 @@
+{
+  "anemona.task.dashboard": "Dashboard",
+  "anemona.task.refresh": "Refresh",
+  "anemona.task.language.spanish": "Language: Spanish",
+  "anemona.task.language.english": "Language: English",
+  "anemona.task.login": "Log In",
+  "anemona.task.logout": "Log Out",
+  "anemona.task.tasks": "Tasks(Issues)",
+  "anemona.task.pending.activities": "Pending activities",
+  "anemona.task.key.chains": "Keychains"
+}

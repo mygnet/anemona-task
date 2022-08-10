@@ -1,5 +1,16 @@
 # **Registro de cambios**
 
+## [0.0.8] - 2022-08-09
+- Validación para que solo se pueda enviar imágenes archivos adjuntos en los comentarios.
+- El idioma de la extension se ajusto a los estándares i18n y package.nls y se cambia cuando se elige el idioma de vscode, aunque existe la posibilidad de ejecutar el comando: ctr+shit+P "anemona.task: Language: Spanish" o  "anemona.task: Language: English"  este se restaura al abrir nuevamente el VSC con idioma predeterminado de este.
+- Se incorporo una utilizada para los desarrolladores en general un llavero de contraseñas donde se usa criptografía para almacenarla en documentos de gitlab en snippets, se usa AES de 256 bits para el cifrado con una llave que se calcula con los metadatos únicos al momento de crear el llavero.
+- Llaveros. No hay un limite para agregar los llaveros, se pueden editar, eliminar y proteger
+- Al abrir los llaveros se podrán definir algunos campos opcionales que complementan a la contraseña para tener mejor organizado la información de los accesos.
+- Al asignar una contraseña personalizada al llavero hay que tener cuidado de recordarla, ya que no hay manera de recuperar la información del llavero encriptado, pues la contraseña no se almacena, solo se usa como llave maestra para encriptar los datos.
+- Opciones para ordenar los listados considerando el campo de titulo de la contraseña.
+- Opciones para exportar el contenido del llavero a texto claro, cifrado, y en formato json.  
+
+
 ## [0.0.7] - 2022-08-04
 - Se agrego indicadores de tareas vencidas y tareas al limite de tiempo.
 - Se agrego una barra por cada tarea que va decreciendo cunando se acerca la fecha de termino.

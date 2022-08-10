@@ -3,9 +3,11 @@
 [![license](https://img.shields.io/badge/LICENSE-MIT-blue)](https://github.com/mygnet/anemona-task/blob/main/LICENSE)
 [![readme](https://img.shields.io/badge/README-Spanish-green)](README-es.md)
 
-VS Code extension that manages GitLab issues with appearance of featured tasks, delegated tasks and progress statistics in the floating sidebar or dashboard of vsc.
+VS Code extension that handles GitLab issues such as activities and tasks that can be assigned, delegated among the group of members of a GitLab version control project, have a dashboard with progress statistics, all this in the floating sidebar o vscode panel, you also have a calendar with pending tasks of all assigned projects.
 
-![Issues](/assets/github/00-anemona.gif)
+A very essential utility for us developers is also incorporated, which is a password keychain, to have it available in our workspace, taking advantage of the documents that can be created as GitLab snippets, these are encrypted with AES 256 bits, with two levels of encryption, the first level is with unique and own metadata of the keychain when it is generated, and the second level is encrypted with a master password that is not saved, it is only used to lock and unlock the keychain, something important is that the saved snippets in gitlab they are totally private, only the owner user can have access.
+
+![Issues](/assets/github/00-dash.gif)
 
 
 ## **Features**
@@ -31,6 +33,13 @@ VS Code extension that manages GitLab issues with appearance of featured tasks, 
 - (Admin) Change avatar image
 - (Admin) Delete a task
 
+### **Password Keychain**
+- There is no limit of keychains
+- You can edit, Delete and Sort the general keychains
+- Within the keychain there is no limit to the passwords or keys that can be added
+- Can be edited, deleted and sorted
+- Can be locked/unlocked with a master password, two-level encryption is generated
+- Keys can be exported to plain text, json and encrypted format.
 
 ## **How ​​to use**
 
@@ -60,11 +69,11 @@ Once the project is selected, you will be able to see the tasks (Issues) classif
 
 ### **Add tasks(issues)**
 In the same project or another previously selected one, you can add tasks (issues) as follows:
-![Issues](/assets/github/new-task.gif)
+![Issues](/assets/github/06-task-new.gif)
 
 ### **Edit tasks(issues)**
 If you are the creator of the task (incidence), the options to edit the task will appear in the form of 3 points at the top of the task.
-![Issues](/assets/github/06-task-new.gif)
+![Issues](/assets/github/07-task-edit.gif)
 
 ### **Pause and activate tasks(issues)**
 Although it is not exactly a gitlab functionality, but it can be simulated by adding a "paused" tag in this way a task (issue) can be paused.
@@ -94,6 +103,33 @@ If you have administrator permissions, then you will be able to perform some ope
 ### **GitLab issues**
 Let's take a look at the GitLab version control server issues that were added, edited from the vsc extension.
 ![Issues](/assets/github/issues.jpg)
+
+
+## **Password Keychain**
+
+### **Generate a password keychain**
+
+Password management is very simple and intuitive, as the process of adding a keychain is shown in the image.
+
+![Issues](/assets/github/k0-add.gif)
+
+### **Options in password keychains**
+
+Basically there are some generic options, add, edit and order the keychains and list of passwords, it can be noted that they can lock the keychains with a master password.
+
+![Issues](/assets/github/k0-options.gif)
+
+### **Export Keychains**
+
+As a utility is the option to export the keychains to simple plain text, json and encrypted files.
+
+![Issues](/assets/github/k0-export.gif)
+
+### **Looking at the snippets inside gitlab**
+As you can see, the content is never sent in clear text, at all times it is stored encrypted and in a private mode where only the user can have access from gitlab.
+
+![Issues](/assets/github/k0-gitlab.gif)
+
 
 ### *Change control*
 

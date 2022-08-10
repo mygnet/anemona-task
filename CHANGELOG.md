@@ -1,5 +1,15 @@
 # Change Log
 
+## [0.0.8] - 2022-08-09
+- Validation so that only attached images can be sent in the comments.
+- The language of the extension is adjusted to the i18n and package.nls standards and is changed when the vscode language is chosen, although there is the possibility of executing the command: ctr+shit+P "anemona.task: Language: Spanish" o "anemona.task: Language: English" this is restored when opening the VSC again with its default language.
+- One used for developers in general was incorporated, a password keychain where cryptography is used to store it in gitlab documents in snippets, 256-bit AES is used for encryption with a key that is calculated with the unique metadata at the time of creation the keychain.
+- Keychains. There is no limit to add the keychains, they can be edited, deleted and protected
+- When opening the keychains, it will be possible to define some optional fields that complement the password to have better organized access information.
+- When assigning a personalized password to the keychain, you must be careful to remember it, since there is no way to recover the information from the encrypted keychain, since the password is not stored, it is only used as a master key to encrypt the data.
+- Options to order the listings considering the title field of the password.
+- Options to export the keychain content to clear text, encrypted, and json format.
+
 ## [0.0.7] - 2022-08-04
 
 - Added indicators of overdue tasks and tasks to the time limit.

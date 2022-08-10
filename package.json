@@ -1,8 +1,8 @@
 {
   "name": "vscode-anemona-task",
   "displayName": "Anemona Task GitLab",
-  "description": "VSCode Extension Sidebar Panel with Task(issues) GitLab.",
-  "version": "0.0.7",
+  "description": "VSCode Extension Sidebar Panel with Tasks(issues) GitLab.",
+  "version": "0.0.8",
   "icon": "logo.png",
   "repository": {
     "type": "git",
@@ -10,7 +10,8 @@
   },
   "publisher": "mygnet",
   "author": {
-    "name": "Martin R. Mondragón"
+    "name": "Martin R. Mondragón",
+    "email":"martin@anemona.com"
   },
   "engines": {
     "vscode": "^1.54.0"
@@ -22,27 +23,32 @@
   "keywords": [
     "gitlab",
     "anemona",
-    "task",
-    "issues"
+    "activity",
+    "activities",
+    "tasks",
+    "issues",
+    "projects",
+    "todo",
+    "calendar",
+    "events",
+    "passwords",
+    "password management",
+    "keychains",
+    "snippets"
   ],
   "activationEvents": [
     "onStartupFinished",
     "onView:vscode-anemona-task-sidebar",
-    "onCommand:vscode-anemona-task.home-en",
-    "onCommand:vscode-anemona-task.home-es",
-    "onCommand:vscode-anemona-task.refresh-en",
-    "onCommand:vscode-anemona-task.refresh-es", 
-    "onCommand:vscode-anemona-task.login-en",
-    "onCommand:vscode-anemona-task.login-es",
-    "onCommand:vscode-anemona-task.logout-en",
-    "onCommand:vscode-anemona-task.logout-es",
-    "onCommand:vscode-anemona-task.tasks-en",
-    "onCommand:vscode-anemona-task.tasks-es",
-    "onCommand:vscode-anemona-task.activity-en",
-    "onCommand:vscode-anemona-task.activity-es",
+    "onCommand:vscode-anemona-task.home",
+    "onCommand:vscode-anemona-task.refresh",
+    "onCommand:vscode-anemona-task.login",
+    "onCommand:vscode-anemona-task.logout",
+    "onCommand:vscode-anemona-task.tasks",
+    "onCommand:vscode-anemona-task.activity",
+    "onCommand:vscode-anemona-task.keys",
     "onWebviewPanel:vscode-anemona-task.web-task",
     "onWebviewPanel:vscode-anemona-task.comment"
-    ],
+  ],
   "main": "./dist/extension.js",
   "contributes": {
     "viewsContainers": {
@@ -67,36 +73,18 @@
     },
     "commands": [
       {
-        "command": "vscode-anemona-task.home-en",
-        "category": "Anemona Task Management",
-        "title": "Dashboard",
+        "command": "vscode-anemona-task.home",
+        "category": "anemona.task",
+        "title": "%anemona.task.dashboard%",
         "icon": {
           "light": "./assets/icons/light/dash.svg",
           "dark": "./assets/icons/dark/dash.svg"
         }
       },
       {
-        "command": "vscode-anemona-task.home-es",
-        "category": "Anemona Task Management",
-        "title": "Inicio",
-        "icon": {
-          "light": "./assets/icons/light/dash.svg",
-          "dark": "./assets/icons/dark/dash.svg"
-        }
-      },
-      {
-        "command": "vscode-anemona-task.refresh-en",
-        "category": "Anemona Task Management",
-        "title": "Refresh",
-        "icon": {
-          "light": "./assets/icons/light/refresh.svg",
-          "dark": "./assets/icons/dark/refresh.svg"
-        }
-      },
-      {
-        "command": "vscode-anemona-task.refresh-es",
-        "category": "Anemona Task Management",
-        "title": "Recargar",
+        "command": "vscode-anemona-task.refresh",
+        "category": "anemona.task",
+        "title": "%anemona.task.refresh%",
         "icon": {
           "light": "./assets/icons/light/refresh.svg",
           "dark": "./assets/icons/dark/refresh.svg"
@@ -104,68 +92,49 @@
       },
       {
         "command": "vscode-anemona-task.lang-en",
-        "category": "Anemona Task Management",
-        "title": "Language: Spanish"
+        "category": "anemona.task",
+        "title": "%anemona.task.language.spanish%"
       },
       {
         "command": "vscode-anemona-task.lang-es",
-        "category": "Anemona Task Management",
-        "title": "Idioma: Ingles"
+        "category": "anemona.task",
+        "title": "%anemona.task.language.english%"
       },
       {
-        "command": "vscode-anemona-task.login-en",
-        "category": "Anemona Task Management",
-        "title": "Log in"
+        "command": "vscode-anemona-task.login",
+        "category": "anemona.task",
+        "title": "%anemona.task.login%"
       },
       {
-        "command": "vscode-anemona-task.login-es",
-        "category": "Anemona Task Management",
-        "title": "Iniciar sesión"
+        "command": "vscode-anemona-task.logout",
+        "category": "anemona.task",
+        "title": "%anemona.task.logout%"
       },
       {
-        "command": "vscode-anemona-task.logout-en",
-        "category": "Anemona Task Management",
-        "title": "Close session"
-      },
-      {
-        "command": "vscode-anemona-task.logout-es",
-        "category": "Anemona Task Management",
-        "title": "Cerrar sesión"
-      },
-      {
-        "command": "vscode-anemona-task.tasks-en",
-        "category": "Anemona Task Management",
-        "title": "Tasks",
+        "command": "vscode-anemona-task.tasks",
+        "category": "anemona.task",
+        "title": "%anemona.task.tasks%",
         "icon": {
           "light": "./assets/icons/light/tasks.svg",
           "dark": "./assets/icons/dark/tasks.svg"
         }
       },
       {
-        "command": "vscode-anemona-task.tasks-es",
-        "category": "Anemona Task Management",
-        "title": "Tareas",
-        "icon": {
-          "light": "./assets/icons/light/tasks.svg",
-          "dark": "./assets/icons/dark/tasks.svg"
-        }
-      },
-      {
-        "command": "vscode-anemona-task.activity-en",
-        "category": "Anemona Task Management",
-        "title": "Notices and Pending",
+        "command": "vscode-anemona-task.activity",
+        "category": "anemona.task",
+        "title": "%anemona.task.pending.activities%",
         "icon": {
           "light": "./assets/icons/light/activity.svg",
           "dark": "./assets/icons/dark/activity.svg"
         }
       },
       {
-        "command": "vscode-anemona-task.activity-es",
-        "category": "Anemona Task Management",
-        "title": "Avisos y Pendientes",
+        "command": "vscode-anemona-task.keys",
+        "category": "anemona.task",
+        "title": "%anemona.task.key.chains%",
         "icon": {
-          "light": "./assets/icons/light/activity.svg",
-          "dark": "./assets/icons/dark/activity.svg"
+          "light": "./assets/icons/light/keys.svg",
+          "dark": "./assets/icons/dark/keys.svg"
         }
       }
     ],
@@ -184,67 +153,35 @@
     "menus": {
       "view/title": [
         {
-          "command": "vscode-anemona-task.lang-en",
-          "when": "view == vscode-anemona-task-sidebar && vscode-anemona-task.idMenuOption == 1 || view == vscode-anemona-task-sidebar && vscode-anemona-task.idMenuOption == 2",
-          "group": "a@2"
-        },
-        {
-          "command": "vscode-anemona-task.lang-es",
-          "when": "view == vscode-anemona-task-sidebar && vscode-anemona-task.idMenuOption == 3 || view == vscode-anemona-task-sidebar && vscode-anemona-task.idMenuOption == 4",
-          "group": "a@2"
-        },
-        {
-          "command": "vscode-anemona-task.refresh-en",
-          "when": "view == vscode-anemona-task-sidebar && vscode-anemona-task.idMenuOption == 1 || view == vscode-anemona-task-sidebar && vscode-anemona-task.idMenuOption == 2",
-          "group": "navigation@4"
-        },
-        {
-          "command": "vscode-anemona-task.refresh-es",
-          "when": "view == vscode-anemona-task-sidebar && vscode-anemona-task.idMenuOption == 3 || view == vscode-anemona-task-sidebar && vscode-anemona-task.idMenuOption == 4",
-          "group": "navigation@4"
-        },
-        
-        {
-          "command": "vscode-anemona-task.home-en",
-          "title":"",
+          "command": "vscode-anemona-task.home",
+          "title": "",
           "when": "view == vscode-anemona-task-sidebar && vscode-anemona-task.idMenuOption == 2",
           "group": "navigation@1"
         },
         {
-          "command": "vscode-anemona-task.tasks-en",
+          "command": "vscode-anemona-task.tasks",
           "when": "view == vscode-anemona-task-sidebar && vscode-anemona-task.idMenuOption == 2",
           "group": "navigation@2"
         },
         {
-          "command": "vscode-anemona-task.activity-en",
+          "command": "vscode-anemona-task.activity",
           "when": "view == vscode-anemona-task-sidebar && vscode-anemona-task.idMenuOption == 2",
           "group": "navigation@3"
         },
         {
-          "command": "vscode-anemona-task.logout-en",
+          "command": "vscode-anemona-task.keys",
           "when": "view == vscode-anemona-task-sidebar && vscode-anemona-task.idMenuOption == 2",
-          "group": "c@2"
+          "group": "navigation@4"
         },
         {
-          "command": "vscode-anemona-task.home-es",
-          "title":"",
-          "when": "view == vscode-anemona-task-sidebar && vscode-anemona-task.idMenuOption == 4",
-          "group": "navigation@1"
+          "command": "vscode-anemona-task.refresh",
+          "when": "view == vscode-anemona-task-sidebar",
+          "group": "navigation@5"
         },
         {
-          "command": "vscode-anemona-task.tasks-es",
-          "when": "view == vscode-anemona-task-sidebar && vscode-anemona-task.idMenuOption == 4",
-          "group": "navigation@2"
-        },
-        {
-          "command": "vscode-anemona-task.activity-es",
-          "when": "view == vscode-anemona-task-sidebar && vscode-anemona-task.idMenuOption == 4",
-          "group": "navigation@3  "
-        },
-        {
-          "command": "vscode-anemona-task.logout-es",
-          "when": "view == vscode-anemona-task-sidebar && vscode-anemona-task.idMenuOption == 4",
-          "group": "c@2"
+          "command": "vscode-anemona-task.logout",
+          "when": "view == vscode-anemona-task-sidebar && vscode-anemona-task.idMenuOption == 2",
+          "group": "a@1"
         }
       ]
     }
@@ -296,6 +233,5 @@
     "webpack-cli": "^4.4.0"
   },
   "dependencies": {
-    
   }
 }

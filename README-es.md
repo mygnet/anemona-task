@@ -1,15 +1,18 @@
 # **Anemona Task GitLab**
 
-[![Registro de cambios](https://img.shields.io/badge/Registro%20de%20cambios-0.0.7-orange)](https://github.com/mygnet/anemona-task/blob/main/CHANGELOG-es.md)
+[![Registro de cambios](https://img.shields.io/badge/Registro%20de%20cambios-0.0.8-orange)](https://github.com/mygnet/anemona-task/blob/main/CHANGELOG-es.md)
 [![Licencia](https://img.shields.io/badge/Licencia-MIT-blue)](https://github.com/mygnet/anemona-task/blob/main/LICENSE)
 [![Leer en ingles](https://img.shields.io/badge/Leer%20en-Ingles-green)](README.md)
 
-Extensión de VS Code que gestiona las incidencias de GitLab con apariencia de tareas asignadas, delegadas y estadística de avances en la barra lateral flotante o panel de vsc.
+Extensión de VS Code que gestiona problemas de GitLab como actividades y tareas que se pueden asignar, delegar entre el grupo de miembros de un proyecto de control de versiones de  GitLab, se tiene un tablero con estadísticas del progreso, todo esto en la barra lateral flotante o panel de vscode, también se tienen un calendario con tareas pendientes de todos los proyectos asignados.
 
-![Issues](/assets/github/00-anemona.gif)
+También se incorpora una utilidad muy imprescindible para nosotros los desarrolladores que es un llavero de contraseñas, para tenerlo disponible en nuestro espacio de trabajo, aprovechando los documentos que se pueden crear como snippets de GitLab, estos están encriptados con AES 256 bits, con dos niveles de cifrado, el primer nivel es con metadatos único y  propios del llavero cuando se genera, y el segundo nivel se cifra con una contraseña maestra que no se guarda, solo se usa para bloquear y desbloquear el llavero, algo importante es que los snippets guardados en gitlab son totalmente privados, solo el usuario propietario puede tener acceso.
+
+![Issues](/assets/github/00-dash.gif)
 
 ## **Características**
 
+### **Tareas(Incidencias)**
 - Manejo de tareas (incidencias) para GitLab
 - Comentarios por tareas (incidencias)
 - Adjuntar imágenes en los comentarios
@@ -32,14 +35,26 @@ Extensión de VS Code que gestiona las incidencias de GitLab con apariencia de t
 - (Admin) Cambiar imagen del avatar
 - (Admin) Eliminar una tare
 
+### **Llavero de contraseñas**
+- No hay un limite de llaveros
+- Se Pueden editar, Eliminar y Ordenar los llaveros generales
+- Dentro del llavero no hay limite de las contraseñas o llaves que se pueden agregar
+- Se pueden editar, eliminar y ordenar
+- Se pueden bloquear/desbloquear con una contraseña maestra, se genera el cifrado de dos niveles
+- Se pueden exportar las a llaves texto plano, json y formato cifrado.
+
 ## **Cómo utilizar**
 
 La extensión es muy fácil e intuitiva de usar y funciona en el panel de barra lateral:
 
-### **Cambiar el idioma**
+### **Idioma**
 
-En este momento solo esta habilitado el idioma ingles y español
+En versiones anteriores se podría cambiar de ingles/español desde la misma extension, en versiones 0.0.8 y siguientes se integra a las preferencias del idioma del vscode, se consideran las recomendaciones y los estándares i18n y package.nls para el manejo del idioma.
+
 ![Incidencias](/assets/github/03-lang.gif)
+
+Aunque existe la posibilidad de ejecutar el comando: ctr+shit+P "anemona.task: Language: Spanish" o  "anemona.task: Language: English"  este se restaura al abrir nuevamente el VSC con idioma predeterminado de este.
+
 
 ### **Iniciar sesión**
 
@@ -106,3 +121,38 @@ Si tienes permisos del administrador, entonces podrás realizar algunas operacio
 
 Demos un vistazo de las incidencias en el servidor de control de versiones GitLab que fueron agregadas, editas desde la extension vsc.
 ![Incidencias](/assets/github/issues.jpg)
+
+
+## **Llavero de contraseñas**
+
+### **Generar un llavero de contraseñas**
+
+La administración de contraseñas es muy sencilla e intuitiva, como se muestra en la imagen el proceso de agregar un llavero.
+
+![Incidencias](/assets/github/k0-add.gif)
+
+### **Opciones en los llaveros de contraseñas**
+
+Básicamente existen algunas opciones genéricas, agregar, editar y ordenar loas llaveros y listado de contraseñas, se puede destacar que pueden bloquear los llaveros con una contraseña maestra.
+
+![Incidencias](/assets/github/k0-options.gif)
+
+### **Exportar llaveros**
+
+Como una utilidad es la opción de exportar los llaveros a simples archivos de texto plano, json y cifrado.
+
+![Incidencias](/assets/github/k0-export.gif)
+
+### **Echando un vistazo a los snippets dentro de gitlab**
+Como se puede ver, en ningún momento se envía el contenido en texto claro, en todo momento se almacena  cifrado y en un modo privado donde solo el usuario podrá tener acceso desde gitlab.
+
+![Incidencias](/assets/github/k0-gitlab.gif)
+
+
+### *Control de cambios*
+
+See [CHANGELOG.md](https://github.com/mygnet/anemona-task/blob/main/CHANGELOG-es.md)
+
+### *Licencia*
+
+See [LICENSE](https://github.com/mygnet/anemona-task/blob/main/LICENCE)
