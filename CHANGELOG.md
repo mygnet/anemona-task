@@ -1,4 +1,7 @@
 # Change Log
+## [0.0.9] - 2022-08-10
+- There are GitLab users who can only generate internal and public snippets, for this reason they cannot create private keychains, so the option has been added so that if it does not allow generating private snippets, try immediately with the internal level.
+- In the event that a snippet is deleted directly from gitlab, the option to remove it from the list when trying to open it and it does not exist and returns a 404 error has been implemented.
 
 ## [0.0.8] - 2022-08-09
 - Validation so that only attached images can be sent in the comments.

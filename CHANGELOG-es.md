@@ -1,5 +1,10 @@
 # **Registro de cambios**
 
+## [0.0.9] - 2022-08-10
+- Hay usuarios de GitLab que solo pueden generar snippets internos y públicos, por esta razón no pueden crear llaveros privados, por eso se agrego la opción para que en el caso de que no permita generar los snippets privados intente inmediatamente con nivel interno.
+- En caso de que un snippets sea eliminado directamente desde gitlab, se implemento la opción de quitarlo de la lista cuando se intente abrir y no exista y devuelva un error 404.
+
+
 ## [0.0.8] - 2022-08-09
 - Validación para que solo se pueda enviar imágenes archivos adjuntos en los comentarios.
 - El idioma de la extension se ajusto a los estándares i18n y package.nls y se cambia cuando se elige el idioma de vscode, aunque existe la posibilidad de ejecutar el comando: ctr+shit+P "anemona.task: Language: Spanish" o  "anemona.task: Language: English"  este se restaura al abrir nuevamente el VSC con idioma predeterminado de este.
