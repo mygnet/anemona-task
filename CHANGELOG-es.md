@@ -1,5 +1,8 @@
 # **Registro de cambios**
 
+## [0.1.0] - 2022-08-13
+- Se puede personalizar los colores de la activityBar de vscode con la finalidad de identificar rápidamente el espacio de trabajo.
+
 ## [0.0.9] - 2022-08-10
 - Hay usuarios de GitLab que solo pueden generar snippets internos y públicos, por esta razón no pueden crear llaveros privados, por eso se agrego la opción para que en el caso de que no permita generar los snippets privados intente inmediatamente con nivel interno.
 - En caso de que un snippets sea eliminado directamente desde gitlab, se implemento la opción de quitarlo de la lista cuando se intente abrir y no exista y devuelva un error 404.

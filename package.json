@@ -2,7 +2,7 @@
   "name": "vscode-anemona-task",
   "displayName": "Anemona Task GitLab",
   "description": "VSCode Extension Sidebar Panel with Tasks(issues) GitLab.",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "icon": "logo.png",
   "repository": {
     "type": "git",
